@@ -23,7 +23,7 @@ Func _Main()
     Local Const $sCurlTimeout     = '--connect-timeout 8 --max-time 10'
 
     Local $sGitHubUsername, $sGitHubRepoName
-    Local $sCommand, $sResponse, $sFileContent
+    Local $sCommand, $sResponse, $sFile, $sFileContent
 
     Local Const $iFirstOccurenceFromRightSideFlag = -1
 
@@ -44,7 +44,7 @@ Func _Main()
         $sResponse = StringReplace($sResponse, @CRLF, '')
 
         ;~ Write commit entry to file.
-        Local $sFile = StringFormat('..\output\%s-%s.txt', $sGitHubUsername, $sGitHubRepoName)
+        $sFile = StringFormat('..\output\%s-%s.txt', $sGitHubUsername, $sGitHubRepoName)
         If Not FileExists($sFile) Then
             _WriteFile($sFile, $sResponse)
             ContinueLoop
