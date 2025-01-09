@@ -1,0 +1,28 @@
+{
+    "repository": [
+        {
+            "username": "sven-seyfert",
+            "name": "autoit-webdriver-boilerplate"
+        },
+        {
+            "username": "Danp2",
+            "name": "au3WebDriver"
+        },
+        {
+            "username": "loganch",
+            "name": "AutoIt-VSCode"
+        },
+        {
+            "username": "Genymobile",
+            "name": "scrcpy"
+        },
+        {
+            "username": "Sylvan86",
+            "name": "autoit-json-udf"
+        },
+        {
+            "username": "genius257",
+            "name": "vscode-autoit"
+        }
+    ]
+}
