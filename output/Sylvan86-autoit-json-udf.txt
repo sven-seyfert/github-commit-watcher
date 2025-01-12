@@ -1,0 +1,1 @@
+Fix: _JSON_Base64Encode() generated line breaks, which led to JSON syntax errors

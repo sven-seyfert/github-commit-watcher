@@ -1,0 +1,1 @@
+feat: Add support for AutoIt3Wrapper Directives- Completions and hovers added for the directives- expanded word definition to include '#' in front

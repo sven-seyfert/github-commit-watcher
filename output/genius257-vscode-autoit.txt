@@ -1,0 +1,1 @@
+Fixed issue where a bug with position for nested CallExpressions resulted in getting nested nodes from the AST would extract the CallExpressions as expected
