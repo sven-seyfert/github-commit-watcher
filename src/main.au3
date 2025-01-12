@@ -18,7 +18,7 @@ _Main()
 Func _Main()
     Local Const $sGitHubUrl       = 'https://api.github.com/repos'
     Local Const $sEndpoint        = 'commits?per_page=1'
-    Local Const $sJqCommand       = 'jq.exe -r ".[0].commit.message"'
+    Local Const $sJqCommand       = 'jq.exe -j ".[0].commit.message"'
     Local Const $sCurlProgressBar = '--silent'
     Local Const $sCurlTimeout     = '--connect-timeout 8 --max-time 10'
 
@@ -69,25 +69,22 @@ Func _Main()
 EndFunc
 
 Func _GetRepositoryCount()
-    Local Const $sJqCommand = '..\lib\jq.exe ".repository | length" ..\data\repositories.json'
+    Local Const $sJqCommand = '..\lib\jq.exe -j ".repository | length" ..\data\repositories.json'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
-    Local Const $iFirstOccurenceFromRightSideFlag = -1
 
-    Return StringReplace($sResponse, @CRLF, '', $iFirstOccurenceFromRightSideFlag)
+    Return $sResponse
 EndFunc
 
 Func _GetRepositoryUsername($i)
-    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -r .repository[' & $i & '].username'
+    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -j .repository[' & $i & '].username'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
-    Local Const $iFirstOccurenceFromRightSideFlag = -1
 
-    Return StringReplace($sResponse, @CRLF, '', $iFirstOccurenceFromRightSideFlag)
+    Return $sResponse
 EndFunc
 
 Func _GetRepositoryRepoName($i)
-    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -r .repository[' & $i & '].name'
+    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -j .repository[' & $i & '].name'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
-    Local Const $iFirstOccurenceFromRightSideFlag = -1
 
-    Return StringReplace($sResponse, @CRLF, '', $iFirstOccurenceFromRightSideFlag)
+    Return $sResponse
 EndFunc
