@@ -13,6 +13,10 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [0.3.0] - 2025-01-12
 
+### Added
+
+- Added: CHANGELOG.md file. [577c9f2](https://github.com/sven-seyfert/github-commit-watcher/commit/577c9f233e665c2b145fb32ff0806cc74d521a31)
+
 ### Changed
 
 - Extend webex notification message by links. [05920b4](https://github.com/sven-seyfert/github-commit-watcher/commit/05920b400ca559be5d68c0820618a89d7ac9e0a6)
