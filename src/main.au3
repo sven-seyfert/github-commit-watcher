@@ -58,7 +58,9 @@ Func _Main()
         EndIf
 
         ;~ Send WebEx webhook notification message (in case of new commit).
-        _SendWebExNotification(StringFormat('⚠ New commit was pushed to GitHub project **%s/%s**.', $sGitHubUsername, $sGitHubRepoName))
+        _SendWebExNotification(StringFormat( _
+            '⚠ New [commit](https://github.com/%s/%s/commits/) was pushed to GitHub project [%s/%s](https://github.com/%s/%s).', _
+            $sGitHubUsername, $sGitHubRepoName, $sGitHubUsername, $sGitHubRepoName, $sGitHubUsername, $sGitHubRepoName))
 
         ;~ Update existing commit entry with new commit entry.
         _WriteFile($sFile, $sResponse)
