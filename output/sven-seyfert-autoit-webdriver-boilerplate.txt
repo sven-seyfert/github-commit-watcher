@@ -1,1 +1,1 @@
-Documented: Update CHANGELOG.md file.
+Changed: Update LICENSE.md file (year 2025).
