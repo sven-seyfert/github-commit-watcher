@@ -35,6 +35,12 @@ Func _Main()
         $sGitHubUsername = _GetRepositoryUsername($i)
         $sGitHubRepoName = _GetRepositoryRepoName($i)
 
+        ;~ Note: To geht username and repo name directly as a string
+        ;~ like "sven-seyfert/autoit-webdriver-boilerplate", the following
+        ;~ jq command can be used:
+        ;~ '..\lib\jq.exe -j ".repository[' & $i & '] | \"\(.username)/\(.name)\"" ..\data\repositories.json'
+        ;~ This would avoid the separate jq calls like above.
+
         ;~ Get first commit of specific repository.
         $sCommand = StringFormat( _
             'curl -H "Accept: application/vnd.github.v3+json" "%s/%s/%s/%s" %s %s | ..\lib\%s', _
