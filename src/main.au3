@@ -16,11 +16,12 @@
 _Main()
 
 Func _Main()
-    Local Const $sGitHubUrl       = 'https://api.github.com/repos'
-    Local Const $sEndpoint        = 'commits?per_page=1'
-    Local Const $sJqCommand       = 'jq.exe -j ".[0].commit.message"'
-    Local Const $sCurlProgressBar = '--silent'
-    Local Const $sCurlTimeout     = '--connect-timeout 8 --max-time 10'
+    Local Const $sGitHubUrl         = 'https://api.github.com/repos'
+    Local Const $sEndpoint          = 'commits?per_page=1'
+    Local Const $sJqCommand         = 'jq.exe -j ".[0].commit.message"'
+    Local Const $sCurlProgressBar   = '--silent'
+    Local Const $sCurlIgnoreSSLCert = '--insecure'
+    Local Const $sCurlTimeout       = '--connect-timeout 8 --max-time 10'
 
     Local $sGitHubUsername, $sGitHubRepoName
     Local $sCommand, $sResponse, $sFile, $sFileContent
@@ -43,8 +44,8 @@ Func _Main()
 
         ;~ Get first commit of specific repository.
         $sCommand = StringFormat( _
-            'curl -H "Accept: application/vnd.github.v3+json" "%s/%s/%s/%s" %s %s | ..\lib\%s', _
-            $sGitHubUrl, $sGitHubUsername, $sGitHubRepoName, $sEndpoint, $sCurlProgressBar, $sCurlTimeout, $sJqCommand)
+            'curl -H "Accept: application/vnd.github.v3+json" "%s/%s/%s/%s" %s %s %s | ..\lib\%s', _
+            $sGitHubUrl, $sGitHubUsername, $sGitHubRepoName, $sEndpoint, $sCurlProgressBar, $sCurlIgnoreSSLCert, $sCurlTimeout, $sJqCommand)
 
         $sResponse = _ExecuteCommand($sCommand)
         $sResponse = StringReplace($sResponse, @CRLF, '')
