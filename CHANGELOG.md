@@ -11,6 +11,22 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.4.0] - 2025-01-13
+
+### Changed
+
+- Set temp string for WebEx channel (old one was already just for the youtube livestream). [7d27efc](https://github.com/sven-seyfert/github-commit-watcher/commit/7d27efc1739ae2e652ee98a4738d7dc94072ab39)
+
+### Documented
+
+- Note about jq usages to shorten separate jq calls. [de091c1](https://github.com/sven-seyfert/github-commit-watcher/commit/de091c1cdad4b0253ca0a7a24aad1580a9befecd)
+- Project version bump. [836b698](https://github.com/sven-seyfert/github-commit-watcher/commit/836b69857e3f6501366dc163d93a67ee00d3e2c3)
+- Update output data. [f15ef48](https://github.com/sven-seyfert/github-commit-watcher/commit/f15ef483f5e0748253c16a12c0b32d4462013afe)
+
+### Removed
+
+- Invalid executable (because of temp string WebEx channel). [09eb091](https://github.com/sven-seyfert/github-commit-watcher/commit/09eb09103faa04a4f1fd81d399e003cade93c6ce)
+
 ## [0.3.0] - 2025-01-12
 
 ### Added
@@ -47,7 +63,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit (first running stable state). [b3b0fb7](https://github.com/sven-seyfert/github-commit-watcher/commit/b3b0fb758b1ca15bf43ed9514ed4e6016c29c213)
 
-[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/sven-seyfert/github-commit-watcher/releases/tag/v0.1.0
