@@ -16,6 +16,8 @@
 _Main()
 
 Func _Main()
+    _StartProgressBar('Processing in progress...', 'github-commit-watcher')
+
     Local Const $sGitHubUrl         = 'https://api.github.com/repos'
     Local Const $sEndpoint          = 'commits?per_page=1'
     Local Const $sJqCommand         = 'jq.exe -j ".[0].commit.message"'
