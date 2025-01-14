@@ -14,6 +14,5 @@ Func _SendWebExNotification($sMessage)
         $sCurlProgressBar, _
         $sCurlIgnoreSSLCert)
 
-        ConsoleWrite($sCommand & @CRLF)
     _ExecuteCommand($sCommand)
 EndFunc
