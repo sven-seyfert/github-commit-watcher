@@ -11,6 +11,26 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.5.0] - 2025-01-14
+
+### Added
+
+- LICENSE.md file. (MIT License). [03dc1a1](https://github.com/sven-seyfert/github-commit-watcher/commit/03dc1a1d0b4544662fba70569c68a0f806b3eccf)
+- Progressbar to visualize processing. [f8399b5](https://github.com/sven-seyfert/github-commit-watcher/commit/f8399b58a376260fb7b23aae8dc87105a6b739e5)
+
+### Changed
+
+- Add cURL option '--insecure' to ignore SSL cert verification. [fb963e5](https://github.com/sven-seyfert/github-commit-watcher/commit/fb963e53bae8264a5ce8432e9b0d3d9f9880b9cc)
+
+### Documented
+
+- Project version bump. [37d5a7f](https://github.com/sven-seyfert/github-commit-watcher/commit/37d5a7f426339a14c39ea135e302b55b095040d4)
+- Update output data. [f62e74e](https://github.com/sven-seyfert/github-commit-watcher/commit/f62e74ef7be7963ad8688f2e0a53f8eb792addcc)
+
+### Removed
+
+- Unnecessary console write command. [282a384](https://github.com/sven-seyfert/github-commit-watcher/commit/282a384f274699fd2e70619a523167b0a0ff18c1)
+
 ## [0.4.0] - 2025-01-13
 
 ### Changed
@@ -63,7 +83,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit (first running stable state). [b3b0fb7](https://github.com/sven-seyfert/github-commit-watcher/commit/b3b0fb758b1ca15bf43ed9514ed4e6016c29c213)
 
-[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.1.0...v0.2.0
