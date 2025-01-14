@@ -1,1 +1,1 @@
-Fixed missing error handling when parsing docBlock
+Added DocBlock comment for addDiagnostic method
