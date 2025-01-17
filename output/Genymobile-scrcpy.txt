@@ -1,1 +1,1 @@
-Happy new year 2025!
+Mention virtual display destructionThe new virtual display does not persist after scrcpy exits.
