@@ -46,7 +46,7 @@ Func _Main()
 
         ;~ Get first commit of specific repository.
         $sCommand = StringFormat( _
-            'curl -H "Accept: application/vnd.github.v3+json" "%s/%s/%s/%s" %s %s %s | ..\lib\%s', _
+            'curl -H "Accept: application/vnd.github.v3+json" -H "Cache-Control: no-cache" "%s/%s/%s/%s" %s %s %s | ..\lib\%s', _
             $sGitHubUrl, $sGitHubUsername, $sGitHubRepoName, $sEndpoint, $sCurlProgressBar, $sCurlIgnoreSSLCert, $sCurlTimeout, $sJqCommand)
 
         $sResponse = _ExecuteCommand($sCommand)
