@@ -11,6 +11,17 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.6.0] - 2025-01-17
+
+### Changed
+
+- Extend cURL request command by 'cache-control' header. [538dddd](https://github.com/sven-seyfert/github-commit-watcher/commit/538dddd9e987e0e5149bd69d6e61c80873fe345f)
+
+### Documented
+
+- Project version bump. [1848718](https://github.com/sven-seyfert/github-commit-watcher/commit/18487184040ca91e1103b6fa53019548e4148681)
+- Update output data. [d4cb824](https://github.com/sven-seyfert/github-commit-watcher/commit/d4cb82440e207d9b0b91b02ba0961f88b149a117)
+
 ## [0.5.0] - 2025-01-14
 
 ### Added
@@ -83,7 +94,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit (first running stable state). [b3b0fb7](https://github.com/sven-seyfert/github-commit-watcher/commit/b3b0fb758b1ca15bf43ed9514ed4e6016c29c213)
 
-[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.2.0...v0.3.0
