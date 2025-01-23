@@ -20,7 +20,7 @@ Func _Main()
 
     Local Const $sGitHubUrl         = 'https://api.github.com/repos'
     Local Const $sEndpoint          = 'commits?per_page=1'
-    Local Const $sJqCommand         = 'jq.exe -j ".[0].commit.message"'
+    Local Const $sJqCommand         = 'jq.exe -j ".[0].commit.committer.date, \": \", .[0].commit.message"'
     Local Const $sCurlProgressBar   = '--silent'
     Local Const $sCurlIgnoreSSLCert = '--insecure'
     Local Const $sCurlTimeout       = '--connect-timeout 8 --max-time 10'
@@ -68,8 +68,8 @@ Func _Main()
 
         ;~ Send WebEx webhook notification message (in case of new commit).
         _SendWebExNotification(StringFormat( _
-            '⚠ New [commit](https://github.com/%s/%s/commits/) was pushed to GitHub project [%s/%s](https://github.com/%s/%s).', _
-            $sGitHubUsername, $sGitHubRepoName, $sGitHubUsername, $sGitHubRepoName, $sGitHubUsername, $sGitHubRepoName))
+            '⚠ New [commit](https://github.com/%s/%s/commits/) was pushed to GitHub project [%s/%s](https://github.com/%s/%s).\n\n%s', _
+            $sGitHubUsername, $sGitHubRepoName, $sGitHubUsername, $sGitHubRepoName, $sGitHubUsername, $sGitHubRepoName, $sResponse))
 
         ;~ Update existing commit entry with new commit entry.
         _WriteFile($sFile, $sResponse)
