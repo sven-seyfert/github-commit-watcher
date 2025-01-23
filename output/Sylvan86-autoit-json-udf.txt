@@ -1,1 +1,1 @@
-Fix: _JSON_Base64Encode() generated line breaks, which led to JSON syntax errors
+2025-01-06T09:38:47Z: Fix: _JSON_Base64Encode() generated line breaks, which led to JSON syntax errors

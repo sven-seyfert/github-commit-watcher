@@ -1,1 +1,1 @@
-feat: Add support for AutoIt3Wrapper Directives- Completions and hovers added for the directives- expanded word definition to include '#' in front
+2025-01-22T20:34:12Z: feat: Update changelog for autoit.includePaths registry changes and Au3Check/Problems tab functionality
