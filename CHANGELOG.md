@@ -11,6 +11,23 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.7.0] - 2025-01-24
+
+### Changed
+
+- Extent WebEx notification by the time and message of the commit. [350dc5f](https://github.com/sven-seyfert/github-commit-watcher/commit/350dc5fca1ab21302753e4dd35d94ed7ec40ab91)
+- WebEx webhook URL defined in a config file instead of being hard coded. [a48943c](https://github.com/sven-seyfert/github-commit-watcher/commit/a48943c0e6d2fd98f68ef72a0a9deca4fe89fd45)
+
+### Documented
+
+- Add configuration section to README.md file. [1a4efa3](https://github.com/sven-seyfert/github-commit-watcher/commit/1a4efa3b51f6e42ad70ef7d8a8ec648070193dbc)
+- Project version bump. [7acc64b](https://github.com/sven-seyfert/github-commit-watcher/commit/7acc64b05485125d9c7f6382e6ed5dfc65b4ae55)
+- Update output data by adding timespan of the commit message. [11d816b](https://github.com/sven-seyfert/github-commit-watcher/commit/11d816b5cb3c07cfa0e500b3dc3255659fdb345c)
+
+### Fixed
+
+- Wrong markdown syntax. [3874f95](https://github.com/sven-seyfert/github-commit-watcher/commit/3874f9528f603a0f07d692e3739873632d58c102)
+
 ## [0.6.0] - 2025-01-17
 
 ### Changed
@@ -94,7 +111,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit (first running stable state). [b3b0fb7](https://github.com/sven-seyfert/github-commit-watcher/commit/b3b0fb758b1ca15bf43ed9514ed4e6016c29c213)
 
-[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.3.0...v0.4.0
