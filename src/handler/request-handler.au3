@@ -1,7 +1,7 @@
 #include-once
 #include "../init.au3"
 
-Func _ExecuteCommand($sCommand)
+Func _ExecuteCommand($sCommand, $iTimeoutInSeconds = 6)
     Local Const $sRepoPath    = @ScriptDir
     Local Const $sDriveLetter = StringLeft($sRepoPath, 1)
     Local Const $sExecCommand = StringFormat( _
@@ -18,13 +18,11 @@ Func _ExecuteCommand($sCommand)
         Exit -1
     EndIf
 
-    Local Const $iSixSecondsTimeout = 6
-
-    Local Const $iResult = ProcessWaitClose($iPID, $iSixSecondsTimeout)
+    Local Const $iResult = ProcessWaitClose($iPID, $iTimeoutInSeconds)
     If $iResult == 0 Then
         ConsoleWrite(StringFormat( _
             '[Process wait error]\nExpected: No timeout.\nReceived: Timeout after %s seconds.\nOccurred in command: %s\n', _
-            $iSixSecondsTimeout, $sExecCommand))
+            $iTimeoutInSeconds, $sExecCommand))
 
         Exit -1
     EndIf
