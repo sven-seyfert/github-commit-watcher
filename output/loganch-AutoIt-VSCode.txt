@@ -1,1 +1,1 @@
-2025-01-22T20:34:12Z: feat: Update changelog for autoit.includePaths registry changes and Au3Check/Problems tab functionality
+2025-01-28T23:52:32Z: chore: Update release date for version 1.0.13 in changelog
