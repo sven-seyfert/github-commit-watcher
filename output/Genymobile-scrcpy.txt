@@ -1,1 +1,1 @@
-2025-01-15T09:54:57Z: Mention virtual display destructionThe new virtual display does not persist after scrcpy exits.
+2025-01-15T09:54:57Z: Mention virtual display destruction
