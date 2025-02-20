@@ -11,6 +11,23 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.8.0] - 2025-02-20
+
+### Added
+
+- New repository to watch. [a0a7f3c](https://github.com/sven-seyfert/github-commit-watcher/commit/a0a7f3c13b20d88d477f90b89d7ac90398397915)
+
+### Changed
+
+- Add optional parameter for '_ExecuteCommand' function. [4b40517](https://github.com/sven-seyfert/github-commit-watcher/commit/4b4051772bdd397a884c90dc610d11e7be616d92)
+- Handle commit message as UTF8 string. [87cf0c0](https://github.com/sven-seyfert/github-commit-watcher/commit/87cf0c0e97f212c31f447106b58afe839fdb0687)
+- Update .gitignore file. [4e3cee3](https://github.com/sven-seyfert/github-commit-watcher/commit/4e3cee32384ae1086ffd40bf60c81a56e330f688)
+
+### Documented
+
+- Project version bump. [ddd7b31](https://github.com/sven-seyfert/github-commit-watcher/commit/ddd7b31f66b4e9e4d82cbf28436e8da8ac3ec00f)
+- Update output data. [dcffd71](https://github.com/sven-seyfert/github-commit-watcher/commit/dcffd71b9584eadaf937028f9205930c3ca558eb)
+
 ## [0.7.0] - 2025-01-24
 
 ### Changed
@@ -111,7 +128,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit (first running stable state). [b3b0fb7](https://github.com/sven-seyfert/github-commit-watcher/commit/b3b0fb758b1ca15bf43ed9514ed4e6016c29c213)
 
-[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.4.0...v0.5.0
