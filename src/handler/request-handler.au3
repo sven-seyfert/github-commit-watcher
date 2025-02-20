@@ -29,3 +29,16 @@ Func _ExecuteCommand($sCommand, $iTimeoutInSeconds = 6)
 
     Return StdoutRead($iPID)
 EndFunc
+
+Func _GetOnlyMainCommitMessageAsUTF8String($sResponse)
+    $sResponse = StringReplace($sResponse, @CRLF, '\n')
+
+    Local Const $aResponse = StringRegExp($sResponse, '(?s)(.+?)\\n', 1)
+    Local Const $iUTF8Flag = 4
+
+    If Not IsArray($aResponse) Then
+        Return BinaryToString($sResponse, $iUTF8Flag)
+    EndIf
+
+    Return BinaryToString($aResponse[0], $iUTF8Flag)
+EndFunc

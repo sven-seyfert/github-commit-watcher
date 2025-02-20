@@ -50,7 +50,7 @@ Func _Main()
             $sGitHubUrl, $sGitHubUsername, $sGitHubRepoName, $sEndpoint, $sCurlProgressBar, $sCurlIgnoreSSLCert, $sCurlTimeout, $sJqCommand)
 
         $sResponse = _ExecuteCommand($sCommand)
-        $sResponse = StringReplace($sResponse, @CRLF, '')
+        $sResponse = _GetOnlyMainCommitMessageAsUTF8String($sResponse)
 
         ;~ Write commit entry to file.
         $sFile = StringFormat('..\output\%s-%s.txt', $sGitHubUsername, $sGitHubRepoName)
