@@ -1,1 +1,1 @@
-2025-02-17T20:52:10Z: 🚀 Winhance v25.02.17 - UI Refinement and Stability Improvements
+2025-03-14T11:55:41Z: Removed the option to disable & enable Windows Security suite to prevent Antivirus Detections

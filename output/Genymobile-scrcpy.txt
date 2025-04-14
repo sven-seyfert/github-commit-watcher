@@ -1,1 +1,1 @@
-2025-01-15T09:54:57Z: Mention virtual display destruction
+2025-04-07T08:30:56Z: Remove irrelevant link in FAQ

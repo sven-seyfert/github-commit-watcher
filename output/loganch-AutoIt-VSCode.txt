@@ -1,1 +1,1 @@
-2025-01-28T23:52:32Z: chore: Update release date for version 1.0.13 in changelog
+2025-03-23T02:31:59Z: Merge pull request #223 from sven-seyfert/fix-au3check-script-path-usage
