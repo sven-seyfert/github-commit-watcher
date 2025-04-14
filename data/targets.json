@@ -31,9 +31,19 @@
     ],
     "website": [
         {
-            "name": "chrome-for-testing",
+            "name": "chrome-for-testing-version",
             "url": "https://googlechromelabs.github.io/chrome-for-testing/#stable",
             "regex": "<h2>Stable</h2>.*?Version:.+?code>(.*?)</code>"
+        },
+        {
+            "name": "my-github-stars-count",
+            "url": "https://github.com/sven-seyfert",
+            "regex": "(?s)Stars.+?class=\"Counter\">(\\d+)</span>"
+        },
+        {
+            "name": "my-github-followers-count",
+            "url": "https://github.com/sven-seyfert",
+            "regex": "(?s)color-fg-default\">(\\d+)</span>.+?followers"
         }
     ]
 }

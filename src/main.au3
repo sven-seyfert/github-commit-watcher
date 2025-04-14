@@ -113,7 +113,7 @@ Func _Main()
         EndIf
 
         _SendWebExNotification(StringFormat( _
-            '⚠ New website value appears for website [%s](%s).', _
+            '⚠ New website value appears for website target [%s](%s).', _
             $sWebsiteName, $sWebsiteURL) & '\n\n`' & $sDesiredValue & '`')
 
         _WriteFile($sFile, $sDesiredValue)
