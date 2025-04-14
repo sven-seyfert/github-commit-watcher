@@ -42,7 +42,7 @@ Func _Main()
         ;~ Note: To geht username and repo name directly as a string
         ;~ like "sven-seyfert/autoit-webdriver-boilerplate", the following
         ;~ jq command can be used:
-        ;~ '..\lib\jq.exe -j ".repository[' & $i & '] | \"\(.username)/\(.name)\"" ..\data\repositories.json'
+        ;~ '..\lib\jq.exe -j ".repository[' & $i & '] | \"\(.username)/\(.name)\"" ..\data\targets.json'
         ;~ This would avoid the separate jq calls like above.
 
         ;~ Get first commit of specific repository.
@@ -108,7 +108,7 @@ Func _Main()
 
         $sFileContent = _ReadFile($sFile)
         $sFileContent = StringReplace($sFileContent, @CRLF, '', $iFirstOccurenceFromRightSideFlag)
-        If $sFileContent == $sResponse Then
+        If $sFileContent == $sDesiredValue Then
             ContinueLoop
         EndIf
 
@@ -121,49 +121,49 @@ Func _Main()
 EndFunc
 
 Func _GetRepositoryCount()
-    Local Const $sJqCommand = '..\lib\jq.exe -j ".repository | length" ..\data\repositories.json'
+    Local Const $sJqCommand = '..\lib\jq.exe -j ".repository | length" ..\data\targets.json'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
 
     Return $sResponse
 EndFunc
 
 Func _GetRepositoryUsername($i)
-    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -j .repository[' & $i & '].username'
+    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\targets.json | ..\lib\jq.exe -j .repository[' & $i & '].username'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
 
     Return $sResponse
 EndFunc
 
 Func _GetRepositoryRepoName($i)
-    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -j .repository[' & $i & '].name'
+    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\targets.json | ..\lib\jq.exe -j .repository[' & $i & '].name'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
 
     Return $sResponse
 EndFunc
 
 Func _GetWebsiteCount()
-    Local Const $sJqCommand = '..\lib\jq.exe -j ".repository | length" ..\data\repositories.json'
+    Local Const $sJqCommand = '..\lib\jq.exe -j ".website | length" ..\data\targets.json'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
 
     Return $sResponse
 EndFunc
 
 Func _GetWebsiteName($i)
-    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -j .website[' & $i & '].name'
+    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\targets.json | ..\lib\jq.exe -j .website[' & $i & '].name'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
 
     Return $sResponse
 EndFunc
 
 Func _GetWebsiteURL($i)
-    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -j .website[' & $i & '].url'
+    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\targets.json | ..\lib\jq.exe -j .website[' & $i & '].url'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
 
     Return $sResponse
 EndFunc
 
 Func _GetWebsiteRegEx($i)
-    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\repositories.json | ..\lib\jq.exe -j .website[' & $i & '].regex'
+    Local Const $sJqCommand = '..\lib\jq.exe . ..\data\targets.json | ..\lib\jq.exe -j .website[' & $i & '].regex'
     Local Const $sResponse  = _ExecuteCommand($sJqCommand)
 
     Return $sResponse
