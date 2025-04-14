@@ -11,6 +11,23 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.9.0] - 2025-04-14
+
+### Added
+
+- Prettier config file. [7ed4bb4](https://github.com/sven-seyfert/github-commit-watcher/commit/7ed4bb4579dd4a468ac91c74693f4a56de0ad74b)
+- Website watcher functionality. [9ecb100](https://github.com/sven-seyfert/github-commit-watcher/commit/9ecb10096f27c37c1a1fa9b1283076a3e9f791b1)
+- GitHub stars and followers as website targets. [91ed004](https://github.com/sven-seyfert/github-commit-watcher/commit/91ed004e95106b8564d6ef38575771971f44ff9e)
+
+### Changed
+
+- Rename repositories.json to targets.json. [3f111c9](https://github.com/sven-seyfert/github-commit-watcher/commit/3f111c97ee9ea5a59d87e18805d312b7587730f8)
+
+### Documented
+
+- Update output data. [ad67676](https://github.com/sven-seyfert/github-commit-watcher/commit/ad676760bee212a0d76883eab7cad472443cd372)
+- Project version bump. [1c5de93](https://github.com/sven-seyfert/github-commit-watcher/commit/1c5de93291a6bb2428e1f95934c75b406a58805d)
+
 ## [0.8.0] - 2025-02-20
 
 ### Added
@@ -128,7 +145,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 - Initial commit (first running stable state). [b3b0fb7](https://github.com/sven-seyfert/github-commit-watcher/commit/b3b0fb758b1ca15bf43ed9514ed4e6016c29c213)
 
-[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.8.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.9.0...HEAD
+[0.9.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/sven-seyfert/github-commit-watcher/compare/v0.5.0...v0.6.0
