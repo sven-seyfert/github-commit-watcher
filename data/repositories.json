@@ -28,5 +28,12 @@
             "username": "memstechtips",
             "name": "Winhance"
         }
+    ],
+    "website": [
+        {
+            "name": "chrome-for-testing",
+            "url": "https://googlechromelabs.github.io/chrome-for-testing/#stable",
+            "regex": "<h2>Stable</h2>.*?Version:.+?code>(.*?)</code>"
+        }
     ]
 }
